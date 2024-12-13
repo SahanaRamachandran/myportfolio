@@ -1,0 +1,60 @@
+/* Education.css */
+.education-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .education-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .education-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    color: #0f0808;
+  }
+  
+  .education-card {
+    width: 300px;
+    border: 3px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .education-header {
+    padding: 15px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .education-content {
+    padding: 15px;
+    color: #120505;
+  }
+  
+  .education-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #0f0808;
+  }
+  
+  .education-content p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #0f0808;
+  }
+  

@@ -1,0 +1,91 @@
+.contact-page {
+    padding: 40px;
+    background-color: #f8f9fa;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .contact-item {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .contact-item .icon {
+    font-size: 30px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .contact-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .map {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
