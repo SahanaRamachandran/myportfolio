@@ -36,7 +36,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className="projects-page">
-      <h1 className="projects-titles">My Projects</h1>
+      <h1 className="projects-titles" style={{color:"white"}}>My Projects</h1>
       <div className="projects-container">
         {projects.map((project, index) => (
           <div key={index} className="project-card">

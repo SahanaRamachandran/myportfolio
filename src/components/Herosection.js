@@ -14,7 +14,7 @@ function Herosection() {
 
       <img 
         src={profilePic} 
-        alt="Profile picture of Sahana Ramachandran" 
+        alt="Profile" 
         className="profile-pic" 
       />
       <h1 style={{color:"white"}}>Hello, I'm Sahana.</h1>
