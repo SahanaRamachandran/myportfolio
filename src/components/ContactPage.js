@@ -9,16 +9,9 @@ const ContactPage = () => {
     message: ''
   });
   
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic
-    console.log('Form Submitted:', formData);
-  };
+  
+  
   
   return (
     <div className="contact-page">
