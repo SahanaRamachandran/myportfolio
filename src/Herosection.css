@@ -1,91 +1,77 @@
-/* Hero Section */
-.hero {
-    position: relative;
-    padding: 100px 20px;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  /* Background Video */
-  .hero video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Ensures the video stays behind the content */
-  }
-  
-  /* Profile Picture */
-  .profile-pic {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid #636567;
-    z-index: 1; /* Keeps the profile pic in front of the video */
-  }
-  
-  /* Heading */
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #f1eded; /* Ensure the text is visible on the video */
-  }
-  
-  /* Paragraph */
-  p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    max-width: 600px;
-    color: #ffffff; /* Ensure the text is visible on the video */
-  }
-  
-  /* Button Styles */
-  .buttons .btn {
-    margin: 10px;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #ffffff;
-    background: #1e40af;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  
-  .buttons .btn:hover {
-    background: #2563eb;
-  }
-  
-  /* Navbar Styles */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: make it semi-transparent */
-    z-index: 10; /* Higher z-index to stay on top of the video */
-    padding: 20px;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-  }
-  
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background-color: #121212; /* Dark background */
+  height: 100vh;
+  color: white;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  color: #ff5757; /* Highlight for "HELLO!" */
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white; /* Make the "I Am" text white */
+  margin: 10px 0;
+}
+
+
+.hero-content h2 .highlight {
+  color: #ff5757; /* Highlight the name */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #ff5757;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #e04d4d;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #ff5757;
+  border: 2px solid #ff5757;
+}
+
+.secondary-btn:hover {
+  background-color: #ff5757;
+  color: white;
+}
+
+.hero-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}

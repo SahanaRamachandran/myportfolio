@@ -1,10 +1,60 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0b1120;
-  color: #ffffff;
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  z-index: 1000;
 }
 
-.App {
-  text-align: center;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #4caf50;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section Styling */
+section {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  background-color: black;
+  color: white;
+}
+
+#projects {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+#skills {
+  background-color: #e8e8e8;
+}
+
+#education {
+  background-color: #dcdcdc;
+}
+
+#contact {
+  background-color: #cfcfcf;
 }

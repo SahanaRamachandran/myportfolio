@@ -22,7 +22,7 @@ const ContactPage = () => {
   
   return (
     <div className="contact-page">
-      <h1>Contact Us</h1>
+      <h1>Contact Me</h1>
       
       <div className="contact-info">
         <div className="contact-item">
@@ -42,47 +42,8 @@ const ContactPage = () => {
         </div>
       </div>
       
-      <div className="contact-form">
-        <h2>Get In Touch</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label>Name</label>
-            <input 
-              type="text" 
-              name="name" 
-              value={formData.name} 
-              onChange={handleChange} 
-              required 
-            />
-          </div>
-          
-          <div className="form-group">
-            <label>Email</label>
-            <input 
-              type="email" 
-              name="email" 
-              value={formData.email} 
-              onChange={handleChange} 
-              required 
-            />
-          </div>
-          
-          <div className="form-group">
-            <label>Message</label>
-            <textarea 
-              name="message" 
-              value={formData.message} 
-              onChange={handleChange} 
-              required 
-            />
-          </div>
-          
-          <button type="submit" className="submit-btn">Submit</button>
-        </form>
-      </div>
-      
       <div className="map">
-        <h2>Find Us</h2>
+    
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.929061119735!2d77.00473841479812!3d10.994833862070123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba3d5ef2a37f533%3A0x37a9e44d227cc937!2sCoimbatore%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1686591465892!5m2!1sen!2sus"
           width="600" 
