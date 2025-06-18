@@ -3,16 +3,6 @@ import '../ContactPage.css';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  
-  
-  
-  
-  
   return (
     <div className="contact-page">
       <h1>Contact Me</h1>
