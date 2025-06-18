@@ -14,7 +14,7 @@ import cssIcon from "../assets/css.jpeg";
 import htmlIcon from "../assets/html.png";
 import testingIcon from "../assets/testing.png";
 import awsIcon from "../assets/aws.png";
-import powerbiIcon from "../assets/powebi.jpeg";
+
 import linuxIcon from "../assets/linux.jpeg";
 
 import excelIcon from "../assets/excel.jpeg";
@@ -33,7 +33,7 @@ const skills = [
   { name: "HTML", icon: htmlIcon },
   { name: "Testing", icon: testingIcon },
   { name: "AWS", icon: awsIcon },
-  { name: "Power BI", icon: powerbiIcon },
+
   { name: "Linux", icon: linuxIcon },
 
   { name: "Excel", icon: excelIcon },
