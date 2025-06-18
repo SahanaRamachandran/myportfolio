@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../ContactPage.css';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
