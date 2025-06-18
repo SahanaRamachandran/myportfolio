@@ -13,7 +13,7 @@ function Herosection() {
           I Am <span className="highlight">Sahana</span>
         </h2>
         <p>
-          I am an engineering student with expertise in building web applications and a passion for technology. Currently pursuing my B.Tech in Information Technology at Sri Krishna College of Engineering and Technology, Coimbatore.
+          I'm an engineering student with expertise in building web applications and a passion for technology. Currently pursuing my B.Tech in Information Technology at Sri Krishna College of Engineering and Technology, Coimbatore.
         </p>
         <div className="hero-buttons">
           <a
