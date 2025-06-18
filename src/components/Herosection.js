@@ -25,7 +25,7 @@ function Herosection() {
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/sahana-c-r-0899782a8/"
+            href="https://www.linkedin.com/in/sahana312"
             target="_blank"
             rel="noopener noreferrer"
             className="btn secondary-btn"
