@@ -10,7 +10,7 @@ function Herosection() {
       <div className="hero-content">
         <h1>HELLO!</h1>
         <h2>
-          I'm <span className="highlight">Sahana</span>
+          I'm <span className="highlight">Chefuuuuu</span>
         </h2>
         <p>
           I'm a  passionate  engineering student with expertise in building web applications and a passion for technology. Currently pursuing my B.Tech in Information Technology at Sri Krishna College of Engineering and Technology, Coimbatore.
