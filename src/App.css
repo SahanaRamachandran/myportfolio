@@ -35,6 +35,13 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+#hero, #projects, #skills, #education, #contact {
+  background-color: #121212;
+  color: #f5f5f5;
 }
 
 #hero {

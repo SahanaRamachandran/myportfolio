@@ -36,14 +36,14 @@ const projects = [
 const Projects = () => {
   return (
     <div className="projects-page">
-      <h1 className="projects-titles" style={{color:"Black"}}>My Projects</h1>
+      <h1 className="projects-titles" style={{color:"#f5f5f5"}}>My Projects</h1>
       <div className="projects-container">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <img src={project.image} alt={`${project.title} screenshot`} className="project-image" />
             <div className="project-info">
-              <h2 style={{ color: "black" }}>{project.title}</h2>
-              <h2 style={{ color: "white" }}>{project.titles}</h2>
+              <h2 style={{ color: "#f5f5f5" }}>{project.title}</h2>
+              <h2 style={{ color: "#f5f5f5" }}>{project.titles}</h2>
               <p>{project.description}</p>
               <div className="tools">
                 {project.tools.map((tool, idx) => (

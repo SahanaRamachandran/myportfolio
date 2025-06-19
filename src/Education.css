@@ -1,14 +1,15 @@
 /* Education.css */
 .education-page {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #121212;
     text-align: center;
+    color: #f5f5f5;
   }
   
   .education-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #f5f5f5;
   }
   
   .education-container {
@@ -24,9 +25,10 @@
     border: 3px solid;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #232323;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #f5f5f5;
   }
   
   .education-card:hover {
@@ -43,18 +45,18 @@
   
   .education-content {
     padding: 15px;
-    color: #120505;
+    color: #f5f5f5;
   }
   
   .education-content h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #0f0808;
+    color: #f5f5f5;
   }
   
   .education-content p {
     font-size: 1rem;
     margin: 5px 0;
-    color: #0f0808;
+    color: #f5f5f5;
   }
   
