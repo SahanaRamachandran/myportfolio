@@ -8,12 +8,12 @@ function Herosection() {
   return (
     <div className="hero-container">
       <div className="hero-content">
-        <h1>HELLO!</h1>
+        <h1>ABOUT ME</h1>
         <h2>
           I'm <span className="highlight">Sahana</span>
         </h2>
         <p>
-          I'm a  passionate  engineering student with expertise in building web applications and a passion for technology. Currently pursuing my B.Tech in Information Technology at Sri Krishna College of Engineering and Technology, Coimbatore.
+           An engineering student with a strong interest in software development and problem-solving. I am passionate about building practical and user-focused applications. I am a quick learner with strong collaboration skills and a commitment to continuous improvement. I am currently seeking opportunities where I can apply my skills, contribute to impactful projects, and grow as a software developer in a professional environment.
         </p>
         <div className="hero-buttons">
           <a

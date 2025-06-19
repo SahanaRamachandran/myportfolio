@@ -42,8 +42,8 @@ const Projects = () => {
           <div key={index} className="project-card">
             <img src={project.image} alt={`${project.title} screenshot`} className="project-image" />
             <div className="project-info">
-              <h2 style={{ color: "#f5f5f5" }}>{project.title}</h2>
-              <h2 style={{ color: "#f5f5f5" }}>{project.titles}</h2>
+              <h2 style={{ color: "#121212" }}>{project.title}</h2>
+              <h2 style={{ color: "#121212" }}>{project.titles}</h2>
               <p>{project.description}</p>
               <div className="tools">
                 {project.tools.map((tool, idx) => (
