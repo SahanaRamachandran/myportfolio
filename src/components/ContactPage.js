@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../ContactPage.css';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = 'service_bpumw4m';
+const TEMPLATE_ID = 'template_fsbzpca';
+const PUBLIC_KEY = 'Qk_NjlJAR5Am8N9sp';
 
 const ContactPage = () => {
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY)
+      .then(() => {
+        setStatus('Message sent successfully!');
+        setForm({ name: '', email: '', message: '' });
+      })
+      .catch(() => {
+        setStatus('Failed to send message. Please try again.');
+      });
+  };
+
   return (
     <div className="contact-page">
       <h1 className="section-title">Contact Me</h1>
@@ -25,19 +50,35 @@ const ContactPage = () => {
         </div>
       </div>
       
-      <div className="map">
-    
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.929061119735!2d77.00473841479812!3d10.994833862070123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba3d5ef2a37f533%3A0x37a9e44d227cc937!2sCoimbatore%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1686591465892!5m2!1sen!2sus"
-          width="600" 
-          height="450" 
-          style={{ border: 0 }} 
-          allowFullScreen="" 
-          loading="lazy" 
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Location Map"
-        ></iframe>
-      </div>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <h2>Write me a message</h2>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={form.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={form.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          value={form.message}
+          onChange={handleChange}
+          required
+          rows={5}
+        />
+        <button type="submit">Send Message</button>
+        {status && <p style={{ color: status.includes('success') ? '#4caf50' : '#ff5757', marginTop: '10px' }}>{status}</p>}
+      </form>
     </div>
   );
 };
