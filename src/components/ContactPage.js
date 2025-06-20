@@ -4,7 +4,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 const SERVICE_ID = 'service_bpumw4m';
-const TEMPLATE_ID = 'template_fsbzpca';
+const TEMPLATE_ID = 'template_ai312';
 const PUBLIC_KEY = 'Qk_NjlJAR5Am8N9sp';
 
 const ContactPage = () => {
@@ -18,7 +18,12 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus('Sending...');
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY)
+    emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      { ...form, title: "Contact from Portfolio" },
+      PUBLIC_KEY
+    )
       .then(() => {
         setStatus('Message sent successfully!');
         setForm({ name: '', email: '', message: '' });
