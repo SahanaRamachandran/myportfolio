@@ -5,7 +5,6 @@ import "../Projects.css";
 import AccidentImg from "../assets/Accident.jpg";
 import MedicalImg from "../assets/Medical.jpg";
 import HomeServiceImg from "../assets/homeservice.jpg";
-import profilePic from "../assets/profile.jpg"; // Placeholder image for MEDSCAN
 import MedscanImg from "../assets/medscan.jpg";
 
 const projects = [

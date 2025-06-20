@@ -8,7 +8,6 @@ function Navbar() {
 
   useEffect(() => {
     const sectionElements = sections.map((id) => document.getElementById(id));
-    let prevRatio = 0;
     const observer = new window.IntersectionObserver(
       (entries) => {
         let maxRatio = 0;
