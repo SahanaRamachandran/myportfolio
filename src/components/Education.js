@@ -22,7 +22,7 @@ const educationData = [
 const Education = () => {
   return (
     <div className="education-page">
-      <h1 className="education-title">My Education</h1>
+      <h1 className="section-title">My Education</h1>
       <div className="education-container">
         {educationData.map((edu, index) => (
           <div key={index} className="education-card" style={{ borderColor: edu.color }}>

@@ -4,6 +4,10 @@
   color: #f5f5f5;
   text-align: center;
   background: #121212;
+  width: 100vw;
+  min-width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .contact-page h1 {

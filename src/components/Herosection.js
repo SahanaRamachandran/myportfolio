@@ -8,7 +8,7 @@ function Herosection() {
   return (
     <div className="hero-container">
       <div className="hero-content">
-        <h1>ABOUT ME</h1>
+        <h1 className="section-title align-left">ABOUT ME</h1>
         <h2>
           I'm <span className="highlight">Sahana</span>
         </h2>

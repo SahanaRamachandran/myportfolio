@@ -42,7 +42,7 @@ const skills = [
 const Skills = () => {
   return (
     <section className="skills-section">
-      <h2 className="skills-title">My Skills</h2>
+      <h2 className="section-title">My Skills</h2>
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">

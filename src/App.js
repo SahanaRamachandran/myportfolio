@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Herosection from "./components/Herosection";
 import Projects from "./components/Projects";
@@ -10,16 +9,26 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Herosection />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-    </Router>
+      <div className="app-bg">
+        <section id="home">
+          <Herosection />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="education">
+          <Education />
+        </section>
+        <section id="contact">
+          <ContactPage />
+        </section>
+      </div>
+    </>
   );
 }
 

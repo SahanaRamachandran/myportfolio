@@ -5,8 +5,18 @@ import "../Projects.css";
 import AccidentImg from "../assets/Accident.jpg";
 import MedicalImg from "../assets/Medical.jpg";
 import HomeServiceImg from "../assets/homeservice.jpg";
+import profilePic from "../assets/profile.jpg"; // Placeholder image for MEDSCAN
+import MedscanImg from "../assets/medscan.jpg";
 
 const projects = [
+  {
+    title: "MEDSCAN AI",
+    description:
+      "AI-powered Medical Image Analyzer. Developed a diagnostic web app to detect tumors, fractures, strokes, and abnormalities from MRI, CT, and X-ray images. Provides instant severity assessment and medical recommendations using specialized AI models.",
+    tools: ["React", "TypeScript", "Tailwind CSS", "Hugging Face Transformers"],
+    image: MedscanImg,
+    github: "https://github.com/SahanaRamachandran/tumor-insight-detect",
+  },
   {
     title: "HOMERX",
     description:
@@ -36,7 +46,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className="projects-page">
-      <h1 className="projects-titles" style={{color:"#f5f5f5"}}>My Projects</h1>
+      <h1 className="section-title">My Projects</h1>
       <div className="projects-container">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
